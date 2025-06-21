@@ -1,0 +1,29 @@
+
+# Python
+__pycache__/
+*.py[cod]
+*.env
+
+# Jupyter Notebooks
+.ipynb_checkpoints/
+
+# Data Files
+data/raw/
+data/cleaned/
+*.csv
+*.xlsx
+*.parquet
+
+# Power BI Outputs
+*.pbix
+dashboards/clips/
+dashboards/screenshots/
+
+# Reports
+*.pdf
+*.pptx
+
+# OS/Editor
+.DS_Store
+Thumbs.db
+.vscode/
