@@ -6,7 +6,7 @@ Tata Insights and Quants or Tata iQ.
 Clearly state the purpose and primary objective of the project.  
 *Length: 2–3 sentences*
 
-`[Insert overview here]`
+![Dashboard](https://github.com/JzesatiD/tatagroup_dash/blob/main/assets/dashboard.png?raw=true)
 
 **Background & Motivation**  
 Describe the client or organization and the problem context.  
