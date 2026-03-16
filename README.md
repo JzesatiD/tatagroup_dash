@@ -1,6 +1,6 @@
 # Tata Insights and Quants (Tata Group) - Project Overview
 <c>**Retail Strategy & Insights**<c/>
-![Dashboard](https://github.com/JzesatiD/tatagroup_dash/blob/main/assets/dashboard.png?raw=true)
+![Trendline](https://github.com/JzesatiD/tatagroup_dash/blob/main/assets/11_rev_trend.png?raw=true)
 
 **Overview** The primary objective of this project was to transform over 500,000 raw transactional records into actionable business intelligence for the CEO and CMO of a global retail store. By performing rigorous data cleaning and multidimensional analysis, the project identifies seasonal revenue trends, high-value customer segments, and geographic expansion opportunities to drive strategic fiscal planning.
 
