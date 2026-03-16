@@ -1,6 +1,8 @@
-# [Project Title] - Project Overview
-
+# Tata Insights and Quants (Tata iQ) - Project Overview
+Using Power BI + Power Query
 **Overview**  
+Tata Insights and Quants or Tata iQ.
+
 Clearly state the purpose and primary objective of the project.  
 *Length: 2–3 sentences*
 
