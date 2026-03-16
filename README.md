@@ -1,87 +1,36 @@
-# Tata Insights and Quants (Tata iQ) - Project Overview
-Using Power BI + Power Query
-**Overview**  
-Tata Insights and Quants or Tata iQ.
-
-Clearly state the purpose and primary objective of the project.  
-*Length: 2–3 sentences*
-
+# Tata Insights and Quants (Tata Group) - Project Overview
+<c>**Retail Strategy & Insights**<c/>
 ![Dashboard](https://github.com/JzesatiD/tatagroup_dash/blob/main/assets/dashboard.png?raw=true)
 
-**Background & Motivation**  
-Describe the client or organization and the problem context.  
-*Length: 2 paragraphs*
+**Overview** The primary objective of this project was to transform over 500,000 raw transactional records into actionable business intelligence for the CEO and CMO of a global retail store. By performing rigorous data cleaning and multidimensional analysis, the project identifies seasonal revenue trends, high-value customer segments, and geographic expansion opportunities to drive strategic fiscal planning.
 
-`[Insert background here]`
+**Background & Motivation** The Tata Group requested a comprehensive "health check" of their retail operations to prepare for future forecasting. The organization faced challenges with data integrity—specifically regarding negative quantities and pricing errors—which threatened to skew revenue reporting and international expansion plans.
+
+The motivation was to move beyond "vanity metrics" and provide the executive team with a "Cleaned Data" model. This model identifies exactly where demand is surging and which international markets represent the highest ROI for an expansion strategy, ensuring that marketing and operational spend are backed by verified data.
+
 ---
 
 ## Dataset Structure
 
-Summarize data sources, number of tables/files, and what each includes.  
-*Length: 4–6 sentences + optional diagram*
+The analysis was performed on a transactional dataset containing approximately 542,000 records including fields for Quantity, Unit Price, CustomerID, Country, and Invoice Date. Through a non-destructive Power Query transformation, the dataset was refined to ~379,000 high-fidelity records, ensuring that only valid, non-duplicated commercial transactions were included in the final model.
 
-`[Insert dataset description here]`
+**Data Cleaning Logic:**
+* **Quantity Filter:** Isolated and removed "returns" (negative quantities) by enforcing a minimum of 1 unit.
+* **Price Filter:** Enforced a $0 floor on unit prices to eliminate input errors.
+* **Deduplication:** Utilized a count-based rule in Power Query to filter out duplicate records without destroying the primary query integrity.
 
-**Schema (Optional):**  
-![ERD](image_url)
 ---
 
 ## Executive Summary
 
 ### Overview of Findings
-List and briefly define key performance indicators used in analysis.  
-*Length: 4–6 sentences*
+The analysis uncovered a massive seasonal surge in the latter half of 2011, identifying a 76.5% revenue rally starting in August. Key Performance Indicators (KPIs) focused on Monthly Revenue, International Demand Ranking, and Customer Value Concentration. By filtering out domestic (UK) outliers, the model identified the Netherlands and Ireland as the primary engines for international growth, providing a clear roadmap for geographic expansion.
 
-`[Insert main findings summary here]`
-
-![Main Dashboard](image_url)
+![Dashboard](https://github.com/JzesatiD/tatagroup_dash/blob/main/assets/dashboard.png?raw=true)
 
 ### Insights Deep Dive
-Break down insights for each major metric or dimension.  
-*2–3 subsections, each with 3–5 bullets*
 
-_Each insight should include:_
-- _Quantified Value_
-- _Business Metric_
-- _Simple Story about historical trend_
-
-#### Metric A: [Title]
-- `[Insight 1]`
-- `[Insight 2]`
-
-#### Metric B: [Title]
-- `[Insight 1]`
-- `[Insight 2]`
-
----
-
-## Recommendations
-
-Provide actionable insights based on data analysis, aligned with business goals.  
-*Length: 3–6 bullets*
-
-- **[Focus Area]**: `[Recommendation with justification]`
-- **[Focus Area]**: `[Recommendation with justification]`
-
----
-
-## Dashboard
-
-Describe dashboard capabilities, filters, and metrics shown.  
-*Length: 1 paragraph + 1 preview image*
-
-`[Insert link and description]`
-
-![Dashboard Preview](image_url)
-
----
-
-## Presentation Sample
-
-Include link to slides and sample images to showcase report design.  
-*Length: 1 paragraph + 2–3 slide previews*
-
-`[Insert presentation link]`
-
-![Slide 1](image_url)  
-![Slide 2](image_url)
+#### Metric A: Revenue Seasonality & Trends
+- **$640,000 Revenue Anchor**: In August 2011, the store hit a revenue baseline of $640k, which served as the launchpad for a significant Q4 rally.
+- **76.5% Seasonal Increase**: Analysis identified a massive three-month rally where revenues surged by over 76%, peaking at the end of the year.
+- **Holiday Demand Narrative**: Historical data suggests this surge is highly correlated with holiday shopping cycles, indicating that marketing spend should be front-loaded in Q3 to capture this momentum.
