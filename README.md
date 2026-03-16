@@ -4,9 +4,10 @@
 <p align="center">
 <img src="https://github.com/JzesatiD/tatagroup_dash/blob/main/assets/11_rev_trend.png?" alt="Trendline" width="65%">
 </p>
-**Overview** The primary objective of this project was to transform over 500,000 raw transactional records into actionable business intelligence for the CEO and CMO of a global retail store. By performing rigorous data cleaning and multidimensional analysis, the project identifies seasonal revenue trends, high-value customer segments, and geographic expansion opportunities to drive strategic fiscal planning.
 
-**Background & Motivation** The Tata Group requested a comprehensive "health check" of their retail operations to prepare for future forecasting. The organization faced challenges with data integrity—specifically regarding negative quantities and pricing errors—which threatened to skew revenue reporting and international expansion plans.
+**Overview**: The primary objective of this project was to transform over 500,000 raw transactional records into actionable business intelligence for the CEO and CMO of a global retail store. By performing rigorous data cleaning and multidimensional analysis, the project identifies seasonal revenue trends, high-value customer segments, and geographic expansion opportunities to drive strategic fiscal planning.
+
+**Background & Motivation**: The Tata Group requested a comprehensive "health check" of their retail operations to prepare for future forecasting. The organization faced challenges with data integrity—specifically regarding negative quantities and pricing errors—which threatened to skew revenue reporting and international expansion plans.
 
 The motivation was to move beyond "vanity metrics" and provide the executive team with a "Cleaned Data" model. This model identifies exactly where demand is surging and which international markets represent the highest ROI for an expansion strategy, ensuring that marketing and operational spend are backed by verified data.
 
@@ -14,7 +15,7 @@ The motivation was to move beyond "vanity metrics" and provide the executive tea
 
 ## Dataset Structure
 
-The analysis was performed on a transactional dataset containing approximately 542,000 records including fields for Quantity, Unit Price, CustomerID, Country, and Invoice Date. Through a non-destructive Power Query transformation, the dataset was refined to ~379,000 high-fidelity records, ensuring that only valid, non-duplicated commercial transactions were included in the final model.
+The analysis was performed on a transactional dataset containing approximately 542,000 records, including fields for Quantity, Unit Price, CustomerID, Country, and Invoice Date. Through a non-destructive Power Query transformation, the dataset was refined to ~379,000 high-fidelity records, ensuring that only valid, non-duplicated commercial transactions were included in the final model.
 
 **Data Cleaning Logic:**
 * **Quantity Filter:** Isolated and removed "returns" (negative quantities) by enforcing a minimum of 1 unit.
